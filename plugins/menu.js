@@ -30,6 +30,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
+https://github.com/Mx-Shimmer-01  
 ╭─「 %me 」
 │ Hai, %name!
 │
@@ -44,8 +45,6 @@ const defaultMenu = {
 │
 │ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
 ╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
