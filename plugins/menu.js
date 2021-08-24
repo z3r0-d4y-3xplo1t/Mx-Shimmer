@@ -30,22 +30,35 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-https://github.com/Mx-Shimmer-01  
-╭─「 %me 」
-│ Hai, %name!
-│
-│ Tersisa *%limit Limit*
-│ Role *%role*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
-│ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
-│
-│ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-╰────
+•─────•「 *MX-BOT* 」•─────•
+
+▣「 ⚡*YOUR INFORMATION* 」
+▢ *Name :* %name
+▢ *Role :* %role
+▢ *Remaining :* %limitⓁ
+▢ *Level : %level [%exp / %maxexp]*
+▢ *[%xp4levelup Again For Levelup]*
+▢ *%totalexp Xp In Total*
+
+▣「 🚀*BOT INFORMATION* 」
+▢ *Name :* %me
+▢ *Status :* Active 
+▢ *Uptime :* ⎋%uptime
+▢ *Muptime :* (%muptime)
+▢ *Database :* %rtotalreg of %totalreg
+
+▣「 🕰️*DATE & TIME INFO* 」
+▢ *Date :* %week , %date
+▢ *Islamic :* %dateIslamic
+▢ *Server Time :* %time
+
+▣「 *RULES ⚠️* 」
+▢ *No Spam❗*
+▢ *No VoiceCall/VidCall❗*
+▢ *⏳Database Restart 24 Hour*
+
+https://github.com/Mx-Shimmer-01
+•─────•「 *MENU* 」•─────•
 %readmore`.trimStart(),
   header: '▣「 *%category* 」 ',
   body  : '├▢ %cmd %islimit',
