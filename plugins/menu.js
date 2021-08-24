@@ -30,7 +30,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-•─────•「 *MX-BOT* 」•─────•
+▣─────▣「 *MX-BOT* 」▣─────▣
 
 ▣「 ⚡*YOUR INFORMATION* 」
 ▢ *Name :* %name
@@ -52,17 +52,17 @@ const defaultMenu = {
 ▢ *Islamic :* %dateIslamic
 ▢ *Server Time :* %time
 
-▣「 *RULES ⚠️* 」
-▢ *No Spam❗*
-▢ *No VoiceCall/VidCall❗*
-▢ *⏳Database Restart 24 Hour*
+▣「 ⚠️*RULES *⚠️ 」
+▢ *No Spam*
+▢ *No VoiceCall/VidCall*
+▢ ⏳*Database Restart 24 Hour*
 
 https://github.com/Mx-Shimmer-01
-•─────•「 *MENU* 」•─────•
+▣─────▣「 *MENU* 」▣─────▣
 %readmore`.trimStart(),
   header: '▣「 *%category* 」 ',
   body  : '├▢ %cmd %islimit',
-  footer: '╰─────────────────▣\n',
+  footer: '╰───────────────────▣\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
