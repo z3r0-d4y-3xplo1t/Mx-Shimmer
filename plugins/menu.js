@@ -59,7 +59,7 @@ const defaultMenu = {
 ▢ Website : www.smileyoursystem.my.id
 ▣─────▣「 *MENU* 」▣─────▣
 %readmore`.trimStart(),
-  header: '▣──「 *%category* 」──▣',
+  header: '▣──❲ *%category* ❳──▣',
   body  : '│▢ %cmd %islimit',
   footer: '▣────────────────────▣\n',
   after: `
