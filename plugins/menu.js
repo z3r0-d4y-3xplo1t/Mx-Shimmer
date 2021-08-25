@@ -30,9 +30,9 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-▣─────▣「 *MX-BOT* 」▣─────▣
+▣─────▣「 *WABOT* 」▣─────▣
 
-▣「 ⚡*YOUR INFORMATION* 」
+▣「 ✨ *YOUR INFORMATION* 」
 ▢ *Name :* %name
 ▢ *Role :* %role
 ▢ *Remaining :* %limitⓁ
@@ -40,32 +40,29 @@ const defaultMenu = {
 ▢ *[%xp4levelup Again For Levelup]*
 ▢ *%totalexp Xp In Total*
 
-▣「 🚀*BOT INFORMATION* 」
+▣「 🚀 *BOT INFORMATION* 」
 ▢ *Name :* %me
 ▢ *Status :* Active 
 ▢ *Uptime :* ⎋%uptime
 ▢ *Muptime :* (%muptime)
 ▢ *Database :* %rtotalreg of %totalreg
 
-▣「 🕰️*DATE & TIME INFO* 」
+▣「 💫 *DATE & TIME INFO* 」
 ▢ *Date :* %week , %date
 ▢ *Islamic :* %dateIslamic
 ▢ *Server Time :* %time
 
-▣「 ⚠️*RULES *⚠️ 」
-▢ *No Spam*
-▢ *No VoiceCall/VidCall*
-▢ ⏳*Database Restart 24 Hour*
-
-https://github.com/Mx-Shimmer-01
+▣「 ❗ *MORE INFORMATION* 」
+▢ Github : https://github.com/Mx-Shimmer-01
+▢ Author : wa.me/16163190066
+▢ Email : mx.shimmer.01@gmail.com
+▢ Website : www.smileyoursystem.my.id
 ▣─────▣「 *MENU* 」▣─────▣
 %readmore`.trimStart(),
-  header: '▣「 *%category* 」 ',
-  body  : '├▢ %cmd %islimit',
-  footer: '╰───────────────────▣\n',
+  header: '▣──「 *%category* 」──▣',
+  body  : '│▢ %cmd %islimit',
+  footer: '▣────────────────────▣\n',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
