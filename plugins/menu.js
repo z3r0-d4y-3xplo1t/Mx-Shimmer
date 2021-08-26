@@ -26,6 +26,7 @@ let tags = {
   'host': 'H O S T - M E N U',
   'advanced': 'A D V A N C E',
   'info': 'I N F O - M E N U',
+  'audio': 'VOICE - CHANGER',
   '': 'NO CATEGORY',
 }
 const defaultMenu = {
@@ -67,6 +68,8 @@ const defaultMenu = {
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
+    let pp = './src/avatar_contact.png'
+    pp = await conn.getProfilePicture(conn.user.jid)
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let { exp, limit, level, role } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
@@ -161,7 +164,18 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.reply(m.chat, text.trim(), m)
+    conn.sendFile(m.chat, pp, 'profile.jpg', text.trim(), { 
+      key: { 
+        remoteJid: 'status@broadcast', 
+        participant: '0@s.whatsapp.net', 
+        fromMe: false 
+      }, 
+      message: { 
+        "imageMessage": { "mimetype": "image/jpeg", 
+        "caption": `${conn.user.name} WhatsApp Bot`
+        } 
+      }
+    }, m, { contextInfo: { mentionedJid: [m.sender]} } )
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
