@@ -27,11 +27,14 @@ let tags = {
   'advanced': 'A D V A N C E',
   'info': 'I N F O - M E N U',
   'audio': 'VOICE - CHANGER',
+  'exp': 'U S E R',
+  'vidiomaker': 'V I D I E O - M A K E R',
+  'maker': 'M A K E R - M E N U',
   '': 'NO CATEGORY',
 }
 const defaultMenu = {
   before: `
-▣────▢「 *MX-BOT* 」▢────▣
+▣───▣「 *MX-BOT* 」▣───▣
 
 ▣ ✨ *YOUR INFORMATION"
 ▢ *Name :* %name
@@ -49,15 +52,15 @@ const defaultMenu = {
 ▢ *Database :* %rtotalreg of %totalreg
 
 ▣ 💫 *DATE & TIME INFO* 
-▢ *Date :* %week , %date
-▢ *Islamic :* %dateIslamic
 ▢ *Server Time :* %time
+▢ *Islam :* %dateIslamic
+▢ *Date :* %week , %date
 
 ▣ ❗ *ABOUT ME*
 ▢ Author : wa.me/16163190066
-▢ Website : www.smileyoursystem.my.id
-▢ Github : github.com/Mx-Shimmer-01
-▣────▢「 *MENU* 」▢────▣
+
+www.smileyoursystem.my.id
+▣───▣「 *MENU* 」▣───▣
 %readmore`.trimStart(),
   header: '▣ ✨ *%category*',
   body  : '│▢ %cmd %islimit',
