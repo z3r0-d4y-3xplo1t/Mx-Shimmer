@@ -1,4 +1,3 @@
-// NurNurz
 let handler = async (m, { conn, text }) => {
    if (!text) throw `Masukan Nama Baru Untuk Bot`
      try {
