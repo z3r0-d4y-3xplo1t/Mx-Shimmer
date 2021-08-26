@@ -31,7 +31,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-▣────「 *MX-BOT* 」────▣
+▣────▢「 *MX-BOT* 」▢────▣
 
 ▣ ✨ *YOUR INFORMATION"
 ▢ *Name :* %name
@@ -57,11 +57,11 @@ const defaultMenu = {
 ▢ Author : wa.me/16163190066
 ▢ Website : www.smileyoursystem.my.id
 ▢ Github : github.com/Mx-Shimmer-01
-▣────「 *ME-NU* 」────▣
+▣────▢「 *MENU* 」▢────▣
 %readmore`.trimStart(),
-  header: '▣ *%category*',
+  header: '▣ ✨ *%category*',
   body  : '│▢ %cmd %islimit',
-  footer: '▣───────────────────▣\n',
+  footer: '▣──────────────────▣\n',
   after: `
 `,
 }
