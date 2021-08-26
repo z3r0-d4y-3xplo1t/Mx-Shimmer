@@ -59,7 +59,7 @@ const defaultMenu = {
 ▣───▣「 *MENU* 」▣───▣
 %readmore`.trimStart(),
   header: '▣ ✨ *%category*',
-  body  : '│▢ %cmd %islimit',
+  body  : '│▢ %cmd',
   footer: '▣──────────────────▣\n',
   after: `
 `,
