@@ -31,7 +31,7 @@ ${res.desc}` : '*Tidak ada Deskripsi*'}
     }
   })
 }
-handler.help = ['inspect <chat.whatsapp.com>']
+handler.help = ['inspect <link group>']
 handler.tags = ['tools']
 
 handler.command = /^inspect$/i
