@@ -34,7 +34,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-▣────▣「 *MX-BOT* 」▣───▣
+•─────•「 *WA-BOT* 」•─────•
 ▣ ✨ *YOUR INFORMATION"
 ▢ *Name :* %name
 ▢ *Role :* %role
@@ -45,19 +45,22 @@ const defaultMenu = {
 
 ▣ 🚀 *BOT INFORMATION*
 ▢ *Name :* %me
-▢ *Status :* Active 
-▢ *Uptime :* ⎋%uptime
-▢ *System :* Windows 12 Pro
+▢ *Runtime :* %uptime
+▢ *Status :* Active 24 Hour
+▢ *Device :* MacBook Pro 13
+▢ *Core :* 16-core Neural Engine
+▢ *Memory* : 16GB
+▢ *Storage :* 2TB
 ▢ *Database :* %rtotalreg of %totalreg
 
 ▣ ⏳ *DATE & TIME INFO* 
 ▢ *Server Time :* %time
 ▢ *Islam :* %dateIslamic
 ▢ *Date :* %date
-▣───▣「 *MENU* 」▣────▣
+•─────•「 *MENU* 」•─────•
 %readmore`.trimStart(),
   header: '┏✨ *%category*',
-  body  : '┃▣ %cmd',
+  body  : '┃◈ %cmd',
   footer: '┗ ┅ ━━━━━━━━━━━━━━━ ┅ \n',
   after: ``,
 }
