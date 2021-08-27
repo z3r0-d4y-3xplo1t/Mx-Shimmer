@@ -34,11 +34,11 @@ let tags = {
 const defaultMenu = {
   before: `
 •─────•「 *WA-BOT* 」•─────•
-▣ ✨ *YOUR INFORMATION*
+▣ 🔮 *YOUR INFORMATION*
 ▢ *Name :* %name
 ▢ *Role :* %role
 ▢ *Remaining :* %limitⓁ
-▢ *Level :* 🧬%level [%exp / %maxexp]*
+▢ *Level : 🧬%level [%exp / %maxexp]*
 ▢ *[%xp4levelup Again For Levelup]*
 ▢ *%totalexp Xp In Total*
 
