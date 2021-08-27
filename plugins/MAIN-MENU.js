@@ -55,11 +55,12 @@ const defaultMenu = {
 ▢ *Islam :* %dateIslamic
 ▢ *Date :* %date
 ━ ┅ ━━━━━━━━━━━━━━━ ┅ ━
-▣ *LIST MENU :*
+        *MENU LIST*    
+━ ┅ ━━━━━━━━━━━━━━━ ┅ ━
 %readmore`.trimStart(),
   header: '┏✨ *%category*',
   body  : '┃▣ %cmd',
-  footer: '┗┅━━━━━━━━━━━━━━━┅━▣\n',
+  footer: '┗ ┅ ━━━━━━━━━━━━━━━ ┅ ━\n',
   after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
