@@ -29,6 +29,7 @@ let tags = {
   'audio': 'V O I C E - C H A N G E R',
   'jadibot': 'J A D I - B O T',
   'host': 'H O S T - M E N U',
+  'advanced': 'A D V A N C E D',
   'maintance': 'M A I N T A N C E',
 }
 const defaultMenu = {
@@ -57,7 +58,7 @@ const defaultMenu = {
 ▢ *Islam :* %dateIslamic
 ▢ *Date :* %date
 •─────•「 *MENU* 」•─────•`.trimStart(),
-  header: '▣ ✨ *%category* ',
+  header: '▣ *%category* ',
   body  : '│▢ %cmd',
   footer: '▣──────────────────▣\n',
   after: ``,
