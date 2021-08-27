@@ -24,7 +24,6 @@ let tags = {
   'jadibot': 'J A D I - B O T',
   'owner': 'O W N E R - M E N U',
   'host': 'H O S T - M E N U',
-  'advanced': 'A D V A N C E D',
   'info': 'I N F O - M E N U',
   'audio': 'V O I C E - C H A N G E R',
   'exp': 'U S E R',
