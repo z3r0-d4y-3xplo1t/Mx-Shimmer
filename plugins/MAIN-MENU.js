@@ -34,31 +34,30 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-▣━━━▣「 *WA-BOT* 」▣━━━▣
-┏ ┅ ━━━━━━━━━━━━━━━ ┅ ━
-┃⚡ *YOUR INFORMATION"
-┃▣ *Name :* %name
-┃▣ *Role :* %role
-┃▣ *Remaining :* %limitⓁ
-┃▣ *Level : %level [%exp / %maxexp]*
-┃▣ *[%xp4levelup Again For Levelup]*
-┃▣ *%totalexp Xp In Total*
-┃
-┃🚀 *BOT INFORMATION*
-┃▣ *Name :* %me
-┃▣ *Status :* Active 
-┃▣ *Uptime :* ⎋%uptime
-┃▣ *System :* Android
-┃▣ *Database :* %rtotalreg of %totalreg
-┃
-┃💫 *DATE & TIME INFO* 
-┃▣ *Server Time :* %time
-┃▣ *Islam :* %dateIslamic
-┃▣ *Date :* %date
-┗ ┅ ━━━━━━━━━━━━━━━ ┅ ━
-▣━━━▣「 *MENU* 」▣━━━▣
+━ ┅ ━━━━━━━━━━━━━━━ ┅ ━
+▣✨ *YOUR INFORMATION"
+▢ *Name :* %name
+▢ *Role :* %role
+▢ *Remaining :* %limitⓁ
+▢ *Level : %level [%exp / %maxexp]*
+▢ *[%xp4levelup Again For Levelup]*
+▢ *%totalexp Xp In Total*
+
+▣ 🚀 *BOT INFORMATION*
+▢ *Name :* %me
+▢ *Status :* Active 
+▢ *Uptime :* ⎋%uptime
+▢ *System :* Android
+▢ *Database :* %rtotalreg of %totalreg
+
+▣ ⏳ *DATE & TIME INFO* 
+▢ *Server Time :* %time
+▢ *Islam :* %dateIslamic
+▢ *Date :* %date
+━ ┅ ━━━━━━━━━━━━━━━ ┅ ━
+
 %readmore`.trimStart(),
-  header: '◪━➣ *%category*',
+  header: '◪ ✨ *%category*',
   body  : '┃▣ %cmd',
   footer: '▣━━━━━━━━━━━━━━━━━━▣\n',
   after: ``,
