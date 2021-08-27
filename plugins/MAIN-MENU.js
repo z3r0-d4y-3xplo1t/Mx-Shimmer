@@ -24,13 +24,13 @@ let tags = {
   'jadibot': 'J A D I - B O T',
   'owner': 'O W N E R - M E N U',
   'host': 'H O S T - M E N U',
-  'advanced': 'A D V A N C E',
+  'advanced': 'A D V A N C E D',
   'info': 'I N F O - M E N U',
   'audio': 'V O I C E - C H A N G E R',
   'exp': 'U S E R',
   'videomaker': 'V I D E O - M A K E R',
   'maker': 'M A K E R - M E N U',
-  '': 'N O - C A T E G O R Y',
+  'maintance': 'M A I N T A N C E',
 }
 const defaultMenu = {
   before: `
