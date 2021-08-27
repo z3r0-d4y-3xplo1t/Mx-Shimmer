@@ -3,9 +3,12 @@ let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
   'main': 'M A I N - M E N U',
+  'exp': 'U S E R - M E N U',
   'game': 'G A M E - M E N U',
   'xp': 'E X P & L I M I T',
   'sticker': 'S T I C K E R - M E N U',
+  'videomaker': 'V I D E O - M A K E R',
+  'maker': 'M A K E R - M E N U',
   'kerang': 'Q & A - M E N U',
   'quotes': 'Q U O T E S - M E N U',
   'admin': 'A D M I N - M E N U',
@@ -21,14 +24,11 @@ let tags = {
   'vote': 'V O T I N G',
   'absen': 'A B S E N',
   'quran': 'I S L A M I C',
-  'jadibot': 'J A D I - B O T',
-  'owner': 'O W N E R - M E N U',
-  'host': 'H O S T - M E N U',
   'info': 'I N F O - M E N U',
+  'owner': 'O W N E R - M E N U',
   'audio': 'V O I C E - C H A N G E R',
-  'exp': 'U S E R',
-  'videomaker': 'V I D E O - M A K E R',
-  'maker': 'M A K E R - M E N U',
+  'jadibot': 'J A D I - B O T',
+  'host': 'H O S T - M E N U',
   'maintance': 'M A I N T A N C E',
 }
 const defaultMenu = {
