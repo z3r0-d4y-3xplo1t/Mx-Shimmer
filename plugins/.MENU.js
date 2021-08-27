@@ -35,7 +35,7 @@ let tags = {
 const defaultMenu = {
   before: `
 •─────•「 *WA-BOT* 」•─────•
-▣ ✨ *YOUR INFORMATION"
+▣「 *YOUR INFORMATION* 」
 ▢ *Name :* %name
 ▢ *Role :* %role
 ▢ *Remaining :* %limitⓁ
@@ -43,7 +43,7 @@ const defaultMenu = {
 ▢ *[%xp4levelup Again For Levelup]*
 ▢ *%totalexp Xp In Total*
 
-▣ 🚀 *BOT INFORMATION*
+▣「 *BOT INFORMATION* 」
 ▢ *Name :* %me
 ▢ *Runtime :* %uptime
 ▢ *Status :* Active 24 Hour
@@ -53,15 +53,14 @@ const defaultMenu = {
 ▢ *Storage :* 2TB
 ▢ *Database :* %rtotalreg of %totalreg
 
-▣ ⏳ *DATE & TIME INFO* 
+▣「 *DATE & TIME INFO* 」
 ▢ *Server Time :* %time
 ▢ *Islam :* %dateIslamic
 ▢ *Date :* %date
-•─────•「 *MENU* 」•─────•
-%readmore`.trimStart(),
-  header: '┏✨ *%category*',
-  body  : '┃◈ %cmd',
-  footer: '┗ ┅ ━━━━━━━━━━━━━━━ ┅ \n',
+•─────•「 *MENU* 」•─────•`.trimStart(),
+  header: '▣「 *%category* 」',
+  body  : '│◈ %cmd',
+  footer: '▣──────────────────▣\n',
   after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
