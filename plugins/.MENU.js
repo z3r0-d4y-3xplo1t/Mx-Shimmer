@@ -34,7 +34,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-━ ┅ ━━━━━━━━━━━━━━━ ┅ ━
+▣────▣「 *MX-BOT* 」▣───▣
 ▣ ✨ *YOUR INFORMATION"
 ▢ *Name :* %name
 ▢ *Role :* %role
@@ -54,13 +54,11 @@ const defaultMenu = {
 ▢ *Server Time :* %time
 ▢ *Islam :* %dateIslamic
 ▢ *Date :* %date
-━ ┅ ━━━━━━━━━━━━━━━ ┅ ━
-        *MENU LIST*    
-━ ┅ ━━━━━━━━━━━━━━━ ┅ ━
+▣───▣「 *MENU* 」▣────▣
 %readmore`.trimStart(),
   header: '┏✨ *%category*',
   body  : '┃▣ %cmd',
-  footer: '┗ ┅ ━━━━━━━━━━━━━━━ ┅ ━\n',
+  footer: '┗ ┅ ━━━━━━━━━━━━━━━ ┅ \n',
   after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
