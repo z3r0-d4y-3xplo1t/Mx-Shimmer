@@ -35,7 +35,8 @@ let tags = {
 const defaultMenu = {
   before: `
 •─────•「 *WA-BOT* 」•─────•
-▣ 🔮 *YOUR INFORMATION*
+
+▣ 👾 *YOUR INFORMATION*
 ▢ *Name :* %name
 ▢ *Role :* %role
 ▢ *Remaining :* %limitⓁ
