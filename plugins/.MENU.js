@@ -38,26 +38,26 @@ const defaultMenu = {
 
 *YOUR INFORMATION*
 👤 • *Name :* %name
-🔰 • *Role :* ```%role```
-✨ • *Remaining :* ```%limitⓁ```
+🔰 • *Role :* %role
+✨ • *Remaining :* %limitⓁ
 🧬 • *Level :%level [%exp / %maxexp]*
 ☘️ • *[%xp4levelup Again For Levelup]*
 🔥 • *%totalexp Xp In Total*
 
 *BOT INFORMATION*
 👤 • *Name :* %me
-⏰ • *Runtime :* ```%uptime```
-✅ • *Status :* ```Active 24 Hour```
-🖥️ • *Device :* ```MacBook Pro 13```
+⏰ • *Runtime :* %uptime
+✅ • *Status :* Active 24 Hour
+🖥️ • *Device :* MacBook Pro 13
 🦠 • *Core :* 16-core Neural Engine
-💾 • *Memory* : ```16GB```
-📁 • *Storage :* ```2TB```
-📂 • *Database :* ```%rtotalreg of %totalreg```
+💾 • *Memory* : 16GB
+📁 • *Storage :* 2TB
+📂 • *Database :* %rtotalreg of %totalreg
 
 *DATE & TIME INFOMATION* 
-🕤 • *Server Time :* ```%time```
-☪️ • *Islam :* %dateIslamic
-🗓️ • *Date :* %date
+🕤 • *Server Time :* _%time_
+☪️ • *Islam :* _%dateIslamic_
+🗓️ • *Date :* _%date_
 %readmore
 •─────•「 *MENU* 」•─────•`.trimStart(),
   header: '▣ *%category* ',
