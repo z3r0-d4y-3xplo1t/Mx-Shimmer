@@ -7,9 +7,9 @@ handler.tags = ['jadibot']
 handler.command = /^(getcode)$/i
 handler.owner = true
 handler.mods = false
-handler.premium = false
+handler.premium = true
 handler.group = false
-handler.private = false
+handler.private = true
 
 handler.admin = false
 handler.botAdmin = false
