@@ -1,5 +1,3 @@
-// xie hua piao piao batman membuka kulkas dan mngambil semangka lalu memberikan mayo di atas semangka
-
 let fetch = require('node-fetch')
 let handler = async(m, { conn }) => {
   let res = await fetch('https://api.waifu.pics/sfw/neko')
@@ -11,5 +9,7 @@ let handler = async(m, { conn }) => {
 handler.help = ['neko']
 handler.tags = ['internet']
 handler.command = /^neko$/i
+
+handler.limit = true
 
 module.exports = handler
