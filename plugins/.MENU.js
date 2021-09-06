@@ -27,7 +27,6 @@ let tags = {
   'info': 'I N F O - M E N U',
   'owner': 'O W N E R - M E N U',
   'audio': 'V O I C E - C H A N G E R',
-  'jadibot': 'J A D I - B O T',
   'host': 'H O S T - M E N U',
   'advanced': 'A D V A N C E D',
   'maintance': 'M A I N T A N C E',
