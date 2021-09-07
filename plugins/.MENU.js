@@ -35,7 +35,7 @@ const defaultMenu = {
   before: `
 •─────•「 *WA-BOT* 」•─────•
 
-*YOUR INFORMATION*
+✨ *YOUR INFORMATION*
 👤 • *Name :* %name
 🔰 • *Role :* %role
 ✨ • *Remaining :* %limitⓁ
@@ -43,7 +43,7 @@ const defaultMenu = {
 ☘️ • *[%xp4levelup Again For Levelup]*
 🔥 • *%totalexp Xp In Total*
 
-*BOT INFORMATION*
+⚡ *BOT INFORMATION*
 👤 • *Name :* %me
 ⏰ • *Runtime :* %uptime
 ✅ • *Status :* Active 24 Hour
@@ -53,13 +53,13 @@ const defaultMenu = {
 📁 • *Storage :* 2TB
 📂 • *Database :* %rtotalreg of %totalreg
 
-*DATE & TIME INFOMATION* 
+⏳ *DATE & TIME INFOMATION* 
 🕤 • *Server Time :* _%time_
 ☪️ • *Islam :* _%dateIslamic_
 🗓️ • *Date :* _%date_
 %readmore
 •─────•「 *MENU* 」•─────•`.trimStart(),
-  header: '▣ *%category* ',
+  header: '▣ %category ',
   body  : '│▢ %cmd',
   footer: '▣──────────────────▣\n',
   after: ``,
