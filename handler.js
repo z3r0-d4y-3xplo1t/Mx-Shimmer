@@ -396,7 +396,7 @@ global.dfail = (type, m, conn) => {
     rowner: '❌ *ACCES DENIED ONLY OWNER* ❌',
     owner: '❌ *ACCES DENIED ONLY OWNER* ❌',
     mods: '❌ *ACCES DENIED ONLY MODERATOR* ❌',
-    premium: '❌ *ACCES DENIED ONLY PREMIUM* ❌,
+    premium: '❌ *ACCES DENIED ONLY PREMIUM* ❌',
     group: '❌ *ACCES DENIED ONLY GROUP* ❌',
     private: '❌ *ACCES DENIED ONLY PRIVATE* ❌',
     admin: '❌ *ACCES DENIED ONLY ADMIN* ❌',
