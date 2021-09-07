@@ -10,4 +10,6 @@ handler.help = ['waifu']
 handler.tags = ['internet']
 handler.command = /^(waifu)$/i
 
+handler.limit = true
+
 module.exports = handler
