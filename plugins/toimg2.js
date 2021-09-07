@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     thumbnail: Buffer.alloc(0)
   })
 }
-handler.help = ['toimg2 (reply)']
+handler.help = ['toimg (reply sticker)']
 handler.tags = ['sticker']
-handler.command = ['toimg2']
+handler.command = ['toimg']
 module.exports = handler
