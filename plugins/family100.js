@@ -13,16 +13,14 @@ async function handler(m) {
     if (!json.status) throw json
     let caption = `
 *Soal:* ${json.soal}
-
 Terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' ')) ? `
 (beberapa jawaban terdapat spasi)
 `: ''}
-
 +${winScore} XP tiap jawaban benar
     `.trim()
     this.game[id] = {
         id,
-        msg: await m.reply(caption),
+        msg: await this.sendButton(m.chat, caption, author, 'Nyerah', 'nyerah', m),
         ...json,
         terjawab: Array.from(json.jawaban, () => false),
         winScore,
