@@ -34,29 +34,434 @@ let tags = {
 const defaultMenu = {
   before: `
 •─────•「 *WA-BOT* 」•─────•
+⌾ *Your Information*
+◌ *Name :* %name
+◌ *Role :* %role
+◌ *Remaining :* %limitⓁ
+◌ *Level : %level [%exp / %maxexp]*
+◌ *[%xp4levelup Again For Levelup]*
+◌ *%totalexp Xp In Total*
 
-▣ *YOUR INFORMATION"
-▢ *Name :* %name
-▢ *Role :* %role
-▢ *Remaining :* %limitⓁ
-▢ *Level : %level [%exp / %maxexp]*
-▢ *[%xp4levelup Again For Levelup]*
-▢ *%totalexp Xp In Total*
+⌾ *Bot Information*
+◌ *Name :* %me
+◌ *Runtime :* %uptime
+◌ *Status :* Active 24 Hour
+◌ *Device :* _MacBook Pro 13_
+◌ *Core :* 16-core Neural Engine
+◌ *Memory* : 16GB
+◌ *Storage :* 2TB
+◌ *Database :* %rtotalreg of %totalreg
 
-▣ *BOT INFORMATION*
-▢ *Name :* %me
-▢ *Runtime :* %uptime
-▢ *Status :* Active 📡24 Hour
-▢ *Device :* MacBook Pro 13
-▢ *Core :* 16-core Neural Engine
-▢ *Memory* : 16GB
-▢ *Storage :* 2TB
-▢ *Database :* %rtotalreg of %totalreg
+⌾ *Date & Time* 
+◌ *Server Time :* %time
+◌ *Islam :* %dateIslamic
+◌ *Date :* %date
 
-▣ *DATE & TIME INFO* 
-▢ *Server Time :* %time
-▢ *Islam :* %dateIslamic
-▢ *Date :* %date
+•─────•「 *MENU* 」•─────•
+⌾「 Main Menu 」
+◌%phelp
+◌%pmenu
+◌%pafk [alasan]
+◌%pjadian Ⓛ
+
+⌾「 User Menu 」
+◌%pdaftar <nama>.<umur>
+◌%preg <nama>.<umur>
+◌%pregister <nama>.<umur>
+◌%punreg <SN|SERIAL NUMBER>
+◌%punregister <SN|SERIAL NUMBER>
+
+⌾「 Game Menu 」
+◌%pasahotak
+◌%pcaklontong
+◌%pfamily100
+◌%pmath <mode>
+◌%psiapakahaku
+◌%ptebakgambar
+◌%ptebakkata
+◌%ptebakkimia
+◌%ptebaklagu Ⓛ
+◌%ptebaklirik
+◌%ptictactoe <custom room name>
+◌%pttt <custom room name>
+
+⌾「 Exp & Limit 」
+◌%pbuy <jumlah limit>
+◌%pbuyall
+◌%pdaily
+◌%pclaim
+◌%pleaderboard <jumlah user>
+◌%plb <jumlah user>
+◌%plevelup
+◌%plimit <@user>
+◌%ppay @user <amount>
+◌%ppaylimit @user <amount>
+
+⌾「 Sticker Menu 」
+◌%pattp <teks> Ⓛ
+◌%pattp2 <teks> Ⓛ
+◌%pctrigger <text> Ⓛ
+◌%pgetexif
+◌%psemoji <tipe> <emoji>
+◌%pstiker <reply media>
+◌%pstiker <url>
+◌%pstikergif <caption|reply media>
+◌%pstikergif <url>
+◌%pstikerline <url> Ⓛ
+◌%pstikertelegram <url> Ⓛ
+◌%pstikerly <pencarian> Ⓛ
+◌%pstickfilter <reply media>
+◌%pstickmaker (reply)
+◌%ptogif (reply)
+◌%ptoimg <reply>
+◌%ptoimg2 (reply)
+◌%ptovideo (reply)
+◌%pttp <teks>
+◌%pttp2 <teks> Ⓛ
+◌%pttpdark <teks> Ⓛ
+◌%pwm <packname>|<author>
+
+⌾「 Kerang-Ajaib 」
+◌%papakah <teks>?
+◌%papakah <pertanyaan>
+◌%partinama [nama]
+◌%pkapan <text>?
+◌%pkapankah <text>?
+◌%pkapan <pertanyaan>
+◌%pkapankah <pertanyaan>
+
+⌾「 Quotes-Menu」
+◌%pbucin
+
+⌾「 Admin Menu」
+◌%padd nomor,nomor Ⓛ
+◌%p+ nomor,nomor Ⓛ
+◌%pdemote @user
+◌%pmember @user
+◌%p↓ @user
+◌%pkick @user Ⓛ
+◌%p- @user Ⓛ
+◌%pdemote @user
+◌%pmember @user
+◌%p↓ @user
+◌%ppromote @user
+◌%padmin @user
+◌%p^ @user
+◌%p↑ @user
+
+⌾「 Group Menu 」
+◌%pgroup *open / close*
+◌%penable <option>
+◌%pdisable <option>
+◌%pgetsider
+◌%pinfogrup
+◌%pleavegc
+◌%pleavegcall
+◌%pleavegroup
+◌%plinkgroup
+◌%phere
+◌%plistonline
+◌%popengumuman [teks]
+◌%poannounce [teks]
+◌%pohidetag [teks]
+◌%ppengumuman [teks]
+◌%pannounce [teks]
+◌%phidetag [teks]
+◌%prevoke
+◌%psetpp
+◌%psetbye <teks>
+◌%psetwelcome <teks>
+◌%psimulate <event> [@mention]
+◌%ptotalpesan
+
+⌾「 Premium 」
+◌%pstop
+◌%pjadibot
+◌%pberhenti
+◌%pgetcode
+◌%plistjadibot
+◌%pjoin <chat.whatsapp.com>
+
+⌾「 Internet 」
+◌%palkitab <pencarian>
+◌%panime <judul>
+◌%pbrainly <soal>
+◌%pcharacter <nama>
+◌%pcovid <negara>
+◌%pdarkjokes
+◌%pfetch <url>
+◌%pget <url>
+◌%pgimage <query>
+◌%pimage <query>
+◌%pgoogle <pencarian>
+◌%pgooglef <pencarian>
+◌%pepep <id>
+◌%pkatabijak <opsi>
+◌%pkbbi <teks>
+◌%plirik <Apa>
+◌%pmanga <judul>
+◌%presep <makanan>
+◌%pmasak <makanan>
+◌%pmegumin
+◌%pmeme
+◌%pneko
+◌%ppikachu
+◌%ppinterest <keyword>
+◌%pppcouple
+◌%pppcp
+◌%pspotify <query>
+◌%pss <url>
+◌%pssf <url>
+◌%psubreddit <query>
+◌%ptrendtwit
+◌%ptrendingtwitter
+◌%punsplash <keyword>
+◌%pwaifu
+◌%pwallpaperanime Ⓛ
+◌%pwallpaperq <query> Ⓛ
+◌%pwikipedia <apa>
+
+⌾「 Anonymous Chat 」
+◌%pstart,leave,next
+
+⌾「 MagerNulis & Logo 」
+◌%ptahta <teks> Ⓛ
+◌%pmagernulis1 <teks> Ⓛ
+◌%pmagernulis2 <teks> Ⓛ
+◌%pmagernulis3 <teks> Ⓛ
+◌%pmagernulis4 <teks> Ⓛ
+◌%pmagernulis5 <teks> Ⓛ
+◌%pmagernulis6 <teks> Ⓛ
+◌%pnulis <teks>
+◌%pquotemaker <teks>|<wm> Ⓛ
+◌%pquotemaker2 <teks | wm> Ⓛ
+◌%ptahta2<teks>
+
+⌾「 Downloader 」
+◌%pfb <url>
+◌%pig <url>
+◌%pighighlight <username>
+◌%pigstalk <username>
+◌%pigstory <username>
+◌%pplay <pencarian>
+◌%pplay2 <pencarian> 
+◌%ptiktok <url>
+◌%ptwitter <url> 
+◌%pytmp3 <url> 
+◌%pyta <url> 
+◌%pytmp4 <url> 
+◌%pytv <url> 
+◌%pyt <url> 
+
+⌾「 Tools Menu 」
+◌%paksara <opsi> <teks> Ⓛ
+◌%pbase64
+◌%pcalc <expression>
+◌%pcarigrup <pencarian>
+◌%pcaripesan <pesan>|<jumlah>
+◌%phd (caption|reply media)
+◌%penhance (caption|reply media)
+◌%penphoto <effect> <text>
+◌%pgimage <query>
+◌%pimage <query>
+◌%pgithubsearch <pencarian>
+◌%phadis
+◌%phalah <teks>
+◌%philih <teks>
+◌%phuluh <teks>
+◌%pheleh <teks>
+◌%pholoh <teks>
+◌%ptobraille
+◌%pinspect <chat.whatsapp.com>
+◌%pkodepos <kota> Ⓛ
+◌%pmemeg<apa|apa>
+◌%pmention <teks>
+◌%pnulis2 <teks>
+◌%pprofile [@user]
+◌%pqr <teks>
+◌%pqrcode <teks>
+◌%preadmore <teks>|<teks>
+◌%pspoiler <teks>|<teks>
+◌%preadviewonce
+◌%prun Ⓛ
+◌%pscan [nomor]
+◌%pping
+◌%pspeed
+◌%pstyle <text>
+◌%ptextpro <effect> <text>|[text2]
+◌%ptranslate <lang> <teks>
+◌%ptts <lang> <teks>
+◌%pupload (caption|reply media)
+◌%pwait (caption|reply image)
+◌%pyts <pencarian>
+◌%pytsearch <pencarian>
+◌%pzodiac *2002 02 25*
+
+⌾「 Fun Menu 」
+◌%pdare
+◌%pjodoh <nama>|<nama doi> Ⓛ
+◌%pref
+◌%psimi <teks>
+◌%psimsimi <teks>
+◌%psimih <teks>
+◌%ptruth
+
+⌾「 Database 」
+◌%paddvn <teks>
+◌%paddmsg <teks>
+◌%paddvideo <teks>
+◌%paddgif <teks>
+◌%paddaudio <teks>
+◌%paddimg <teks>
+◌%paddsticker <teks>
+◌%pdelcmd <text>
+◌%pdelvn <teks>
+◌%pdelmsg <teks>
+◌%pdelvideo <teks>
+◌%pdelgif <teks>
+◌%pdelaudio <teks>
+◌%pdelimg <teks>
+◌%pdelsticker <teks>
+◌%pgetvn <teks>
+◌%pgetmsg <teks>
+◌%pgetvideo <teks>
+◌%pgetgif <teks>
+◌%pgetaudio <teks>
+◌%pgetimg <teks>
+◌%pgetsticker <teks>
+◌%pinfocmd <text>
+◌%plistcmd <text>
+◌%plistvn
+◌%plistmsg
+◌%plistvideo
+◌%plistgif
+◌%plistaudio
+◌%plistimg
+◌%pliststicker
+◌%punlockcmd
+◌%plockcmd
+◌%psetcmd <text>
+
+⌾「 Voting Menu 」
+◌%pcekvote
+◌%phapusvote
+◌%pmulaivote [alasan] Ⓛ
+◌%pupvote
+◌%pdevote
+
+⌾「 Absen Menu 」
+◌%pcekabsen
+◌%phapusabsen
+◌%pmulaiabsen [teks]
+◌%pabsen
+
+⌾「 Islamic menu 」
+◌%palquran <114> <1>
+◌%pasmaulhusna [1-99]
+◌%phadis
+◌%psalat <daerah>
+
+⌾「 Owner Menu 」
+◌%pwhitelist nomor,nomor
+◌%paddprem [@user]
+◌%pbanchat
+◌%pban
+◌%pblocklist
+◌%pbroadcast <teks>
+◌%pbc <teks>
+◌%pbroadcastgroup <teks>
+◌%pbcgc <teks>
+◌%pclearchat
+◌%pclearchat chat
+◌%pclearchat group
+◌%pclearchat all
+◌%pdeletechat
+◌%pdeletechat chat
+◌%pdeletechat group
+◌%pdeletechat all
+◌%pmutechat
+◌%pmutechat chat
+◌%pmutechat group
+◌%pmutechat all
+◌%pdelprem [@user]
+◌%penable <option>
+◌%pdisable <option>
+◌%ppremlist
+◌%poadd @user
+◌%po+ @user
+◌%pokick @user
+◌%po- @user
+◌%popromote @user
+◌%poadmin @user
+◌%po^ @user
+◌%psetbotbio
+◌%psetbotname
+◌%psetbye <teks>
+◌%psetmenu <teks>
+◌%psetmenubefore <teks>
+◌%psetmenuheader <teks>
+◌%psetmenubody <teks>
+◌%psetmenufooter <teks>
+◌%psetmenuafter <teks>
+◌%psetwelcome <teks>
+◌%psimulate <event> [@mention]
+◌%punbanchat
+◌%pban
+◌%pupsw [text] (Reply Media)
+◌%pupsw <text>
+◌%psave @mention <ContactName>
+
+⌾「 Host Menu 」
+◌%pbroadcastjadibot <teks>
+◌%pbcbot <teks>
+◌%pdebounce
+◌%pupdate
+◌%pupdate2
+
+⌾「 Information 」
+◌%pbannedlist
+◌%powner
+◌%pcreator
+◌%pdel
+◌%pdelete
+◌%pdonasi
+◌%pgroups
+◌%pgrouplist
+◌%pbug <laporan>
+◌%preport <laporan>
+◌%pping
+◌%pspeed
+
+⌾「 Maker Menu 」
+◌%pgay
+◌%phornycard
+◌%phornylicense
+◌%pitssostupid
+◌%piss
+◌%pstupid
+◌%plolice
+◌%psimpcard
+◌%ptrigger
+◌%pytcomment <comment>
+
+⌾「 videomaker 」
+◌%pshaunthesheep
+
+⌾「 Audio Menu 」
+◌%ptomp3 <reply audio>
+◌%ptovn <reply audio>
+◌%pbass <reply audio>
+◌%pblown <reply audio>
+◌%pdeep <reply audio>
+◌%pearrape <reply audio>
+◌%pfast <reply audio>
+◌%pfat <reply audio>
+◌%pnightcore <reply audio>
+◌%preverse <reply audio>
+◌%probot <reply audio>
+◌%pslow <reply audio>
+◌%psmooth <reply audio>
+◌%ptupai <reply audio>
 `.trimStart(),
   header: '',
   body  : '',
